@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 background-origin属性</title>
+    <style type="text/css">
+        body {
+            font-family: 微软雅黑;
+            font-size: 14px;
+        }
+        
+        #view {
+            display: inline-block;
+            width: 400px;
+            padding: 15px;
+            font-size: 15px;
+            border: 15px dashed #F1F1F1;
+            background-image: url("images/1.jpg");
+            background-origin: border-box;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onclick = function() {
+            var g1 = document.getElementsByName("group");
+            for (var i = 0; i < g1.length; i++) {
+                if (g1[i].checked) {
+                    console.log(g1[i].value);
+                    document.getElementById("view").style.backgroundClip = g1[i].value;
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="select">
+        background-origin：
+        <input id="ckb1" name="group" type="radio" value="border-box" checked="checked" /><label for="ckb1">border-box</label>
+        <input id="ckb2" name="group" type="radio" value="padding-box" /><label for="ckb2">padding-box</label>
+        <input id="ckb3" name="group" type="radio" value="content-box" /><label for="ckb3">content-box</label>
+    </div>
+    <div id="view">
+        中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，中关村软件园，
+    </div>
+</body>
+
+</html>

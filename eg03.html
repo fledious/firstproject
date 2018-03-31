@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* transition: all 2s; */
+            transition-property: transform width background-color opacity;
+            transition-duration: 3s;
+            /* transform-origin: right bottom; */
+        }
+        
+        div:hover {
+            /* transform: translate(100px, 100px); */
+            /* transform: scale(1, .5); */
+            /* transform: scaleX(2) translate(100px, 100px); */
+            transform: rotate(-360deg);
+            width: 500px;
+            background-color: yellow;
+            opacity: 0.3;
+            /* transform: skew(20deg, 30deg); */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
